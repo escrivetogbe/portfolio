@@ -34,4 +34,4 @@ L'application est accessible sur [http://localhost:3000](http://localhost:3000).
 ## 📬 Liens Utiles
 
 - **GitHub :** [github.com/escrivetogbe](https://github.com/escrivetogbe)
-- **Projet Live :** [Journalist Research Workspace (Vercel)](https://journalist-research-workspace.vercel.app)
+- **Projet Live :** [Mon portfolio (Vercel)](https://portfolio-elietogbe.vercel.app/)
