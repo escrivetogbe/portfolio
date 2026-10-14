@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elie Mahutin TOGBE — Développeur Web Full-Stack | Portfolio</title>
+    <meta name="description" content="Portfolio de Elie Mahutin TOGBE, Développeur Web Full-Stack & Solutions Digitales. Étudiant en Master à l'INSTA Paris, en recherche d'une alternance en Île-de-France.">
+    <meta name="keywords" content="Elie TOGBE, Développeur Full-Stack, Alternance, Master INSTA Paris, Next.js, React, TypeScript, Vue.js, Node.js, PHP, Laravel, PostgreSQL, Firebase">
+    <meta name="author" content="Elie Mahutin TOGBE">
+
+    <!-- Open Graph / Meta Réseaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elie Mahutin TOGBE — Développeur Web Full-Stack">
+    <meta property="og:description" content="Développeur Web Full-Stack (Next.js, TypeScript, Vue.js, Node.js, PHP, PostgreSQL). En recherche active d'une alternance Master (3 sem. entreprise / 1 sem. école).">
+    <meta property="og:image" content="./assets/elie-togbe.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-mark">&lt;EM/&gt;</span>
+                <span class="logo-text">Elie TOGBE</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#experience" class="nav-link">Parcours</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Changer de thème" aria-label="Changer de thème">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://github.com/escrivetogbe" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#contact" class="cta-btn sm-hide">
+                    <span>Me recruter</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        <span>En recherche active d'alternance · Master Bac+5 (INSTA Paris)</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Bonjour, je suis <br>
+                        <span class="gradient-text">Elie Mahutin TOGBE</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        Développeur Web Full-Stack &amp; Créateur de Solutions Numériques
+                    </h2>
+
+                    <p class="hero-description">
+                        Passionné par l'ingénierie logicielle et le développement assisté par IA, je conçois et déploie des applications web performantes, réactives et scalables. <strong>3+ ans d'expérience</strong> dans la livraison de projets concrets (TypeScript, Next.js, Vue.js, PHP/Laravel, PostgreSQL).
+                    </p>
+
+                    <div class="rhythm-tag">
+                        <i class="fa-solid fa-business-time"></i>
+                        <span>Rythme : <strong>3 semaines en entreprise</strong> / 1 semaine à l'école · Disponibilité immédiate</span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="cta-btn primary-btn">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>Découvrir mes projets</span>
+                        </a>
+                        <a href="#contact" class="cta-btn secondary-btn">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span>Prendre contact</span>
+                        </a>
+                        <a href="https://github.com/escrivetogbe" target="_blank" rel="noopener noreferrer" class="cta-btn outline-btn">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-quick-meta">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Villeneuve-le-Roi, Île-de-France</span>
+                        </div>
+                        <div class="meta-separator">•</div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Master DPCDSI (RNCP 7)</span>
+                        </div>
+                        <div class="meta-separator">•</div>
+                        <div class="meta-item">
+                            <i class="fa-solid fa-language"></i>
+                            <span>Français (Natif) · Anglais (Courant)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="photo-wrapper">
+                        <div class="photo-glow-ring"></div>
+                        <img src="./assets/elie-togbe.jpg" alt="Elie Mahutin TOGBE - Développeur Web Full-Stack" class="profile-photo">
+                        
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-1" title="Next.js & TypeScript">
+                            <i class="fa-solid fa-bolt" style="color:#6366f1;"></i>
+                            <span>Next.js · TS</span>
+                        </div>
+                        <div class="floating-badge badge-2" title="Vue.js & Firebase">
+                            <i class="fa-brands fa-vuejs" style="color:#10b981;"></i>
+                            <span>Vue.js · Cloud</span>
+                        </div>
+                        <div class="floating-badge badge-3" title="PHP & Laravel">
+                            <i class="fa-brands fa-laravel" style="color:#ef4444;"></i>
+                            <span>Laravel · SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Strip -->
+        <section class="stats-strip">
+            <div class="container stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Années d'expérience web</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Applications en production</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Bac+5</span>
+                    <span class="stat-label">Master en cours (INSTA Paris)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Disponibilité applicative</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Profil</span>
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="section-subtitle">Développeur rigoureux, orienté produit et focalisé sur la valeur concrète.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-card">
+                        <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Mon approche de l'ingénierie logicielle</h3>
+                        <p>
+                            Titulaire d'une Licence Professionnelle en Informatique (Systèmes d'Information et Logiciels) et actuellement en Master Directeur de Projet SI à l'INSTA Paris, je combine une solide compréhension des architectures web (MVC, API RESTful, modélisation relationnelle) avec une maîtrise des frameworks modernes réactifs.
+                        </p>
+                        <p>
+                            Adepte du <em>Software Craftsmanship</em> et du développement assisté par IA (Cursor, GitHub Copilot), j'utilise les outils d'automatisation pour accélérer la livraison de fonctionnalités tout en maintenant un standard élevé de qualité, de propreté du code et de sécurité.
+                        </p>
+                    </div>
+
+                    <div class="about-card highlight-card">
+                        <div class="about-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>Ce que j'apporte à votre équipe</h3>
+                        <ul class="value-list">
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Autonomie &amp; Polyvalence Full-Stack :</strong> Capacité à concevoir une interface soignée en Front-End et à structurer des APIs sécurisées et des bases de données en Back-End.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Expérience Internationale :</strong> Travail en télétravail pour des entreprises au Canada (Koobify Montréal) et au Bénin, avec une grande adaptabilité culturelle et technique.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Culture de la Performance :</strong> Optimisation Core Web Vitals, réduction des temps de chargement, accessibilité et ergonomie mobile-first.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Stack Technique</span>
+                    <h2 class="section-title">Mes Compétences</h2>
+                    <p class="section-subtitle">Les outils et technologies que j'utilise pour concevoir des applications modernes.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Front-End Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon front-icon"><i class="fa-brands fa-react"></i></div>
+                            <div>
+                                <h3>Front-End</h3>
+                                <p>Interfaces réactives &amp; performantes</p>
+                            </div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill highlight">React.js</span>
+                            <span class="tech-pill highlight">Next.js</span>
+                            <span class="tech-pill highlight">Vue.js</span>
+                            <span class="tech-pill highlight">TypeScript</span>
+                            <span class="tech-pill">JavaScript (ES6+)</span>
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3 / SCSS</span>
+                            <span class="tech-pill">Tailwind CSS</span>
+                            <span class="tech-pill">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Back-End Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon back-icon"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h3>Back-End &amp; Architecture</h3>
+                                <p>APIs robustes, Logique métier &amp; MVC</p>
+                            </div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill highlight">Node.js</span>
+                            <span class="tech-pill highlight">Express</span>
+                            <span class="tech-pill highlight">PHP</span>
+                            <span class="tech-pill highlight">Laravel</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Architecture MVC</span>
+                            <span class="tech-pill">APIs RESTful</span>
+                            <span class="tech-pill">Webhooks</span>
+                            <span class="tech-pill">Sécurité OWASP</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Cloud Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon db-icon"><i class="fa-solid fa-database"></i></div>
+                            <div>
+                                <h3>Bases de Données &amp; Cloud</h3>
+                                <p>Stockage relationnel, NoSQL &amp; Temps réel</p>
+                            </div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill highlight">PostgreSQL</span>
+                            <span class="tech-pill highlight">Prisma ORM</span>
+                            <span class="tech-pill highlight">MySQL</span>
+                            <span class="tech-pill highlight">Firebase (Firestore)</span>
+                            <span class="tech-pill">Firebase Auth</span>
+                            <span class="tech-pill">Vercel</span>
+                            <span class="tech-pill">Modélisation BDD</span>
+                            <span class="tech-pill">Requêtes SQL optimisées</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & AI Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon tools-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div>
+                                <h3>Outils, DevOps &amp; IA</h3>
+                                <p>Productivité, Versioning &amp; Méthodes</p>
+                            </div>
+                        </div>
+                        <div class="tech-pills">
+                            <span class="tech-pill highlight">Git / GitHub / GitLab</span>
+                            <span class="tech-pill highlight">Cursor / VS Code</span>
+                            <span class="tech-pill highlight">GitHub Copilot</span>
+                            <span class="tech-pill">CI/CD (notions)</span>
+                            <span class="tech-pill">Power BI</span>
+                            <span class="tech-pill">WordPress (Sur-mesure)</span>
+                            <span class="tech-pill">Méthode Agile / Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Projets &amp; Réalisations</h2>
+                    <p class="section-subtitle">Découvrez quelques-unes de mes applications concrètes, en production et en open-source.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 : Journalist Research Workspace (FLAGSHIP) -->
+                    <article class="project-card flagship-card">
+                        <div class="project-badge flagship-badge">
+                            <i class="fa-solid fa-star"></i> Projet Phare (Live &amp; Open Source)
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Prisma ORM</span>
+                                <span class="tag">OpenAI API</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                            <h3 class="project-title">Workspace de Recherche &amp; Analyse IA pour Journalistes</h3>
+                            <p class="project-desc">
+                                Application SaaS complète permettant aux journalistes et chercheurs d'organiser leurs sources, d'analyser des documents volumineux et d'exécuter des synthèses intelligentes assistées par LLM. Modélisation relationnelle rigoureuse avec Prisma, persistance sur PostgreSQL et déploiement continu sur Vercel.
+                            </p>
+                            <div class="project-highlights">
+                                <span><i class="fa-solid fa-check"></i> Authentification &amp; gestion de documents</span>
+                                <span><i class="fa-solid fa-check"></i> Requêtes IA contextuelles avec streaming</span>
+                                <span><i class="fa-solid fa-check"></i> Interface réactive et fluide (Next.js App Router)</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://journalist-research-workspace.vercel.app" target="_blank" rel="noopener noreferrer" class="cta-btn primary-btn sm-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Démo en direct</span>
+                                </a>
+                                <a href="https://github.com/escrivetogbe/journalist-research-workspace" target="_blank" rel="noopener noreferrer" class="cta-btn outline-btn sm-btn">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code Source</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 : Kad Distribution E-Commerce -->
+                    <article class="project-card">
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">E-Commerce</span>
+                                <span class="tag">Core Web Vitals</span>
+                            </div>
+                            <h3 class="project-title">Plateforme E-Commerce Kad Distribution (Liqui Moly)</h3>
+                            <p class="project-desc">
+                                Conception intégrale et déploiement de la boutique et vitrine officielle. Mise en place de modules sur mesure, sécurisation des paiements, automatisation du back-office et optimisation technique continue (-40% sur les temps de chargement, 99.9% d'uptime pendant 3 ans).
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://kad-distribution.com" target="_blank" rel="noopener noreferrer" class="cta-btn outline-btn sm-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Visiter le site</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 : Koobify Montréal -->
+                    <article class="project-card">
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Firestore</span>
+                                <span class="tag">APIs REST</span>
+                                <span class="tag">Logistique</span>
+                            </div>
+                            <h3 class="project-title">Application Web de Logistique &amp; Livraison Koobify</h3>
+                            <p class="project-desc">
+                                Développement freelance d'interfaces web réactives pour une solution de livraison express basée à Montréal (Canada). Intégration de Firebase (Firestore &amp; Auth) pour le suivi temps réel des colis, connexion aux APIs de dispatch et optimisation des performances mobiles.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://koobify.com" target="_blank" rel="noopener noreferrer" class="cta-btn outline-btn sm-btn">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>À propos de Koobify</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 : Portail Métier Laravel -->
+                    <article class="project-card">
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">MVC</span>
+                                <span class="tag">OWASP</span>
+                            </div>
+                            <h3 class="project-title">Portail Web Métier &amp; Gestion d'Activité</h3>
+                            <p class="project-desc">
+                                Architecture MVC complète pour la gestion interne d'activité d'entreprise. Modélisation de base de données relationnelle, gestion fine des rôles et permissions (RBAC), sécurisation selon les standards OWASP et tableaux de bord opérationnels.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 : Highlandth Digital Agency -->
+                    <article class="project-card">
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <h3 class="project-title">Site Vitrine Agence Digitale Highlandth</h3>
+                            <p class="project-desc">
+                                Création d'une interface web moderne et interactive présentant les services d'une agence digitale. Animations CSS fluides, responsive design adaptatif et optimisation du référencement naturel.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://highlandth.com" target="_blank" rel="noopener noreferrer" class="cta-btn outline-btn sm-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Visiter le site</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timeline Section -->
+        <section class="section timeline-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Expérience &amp; Formation</span>
+                    <h2 class="section-title">Mon Parcours</h2>
+                    <p class="section-subtitle">Une trajectoire solide entre expérience professionnelle en entreprise et cursus académique de pointe.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Expériences Professionnelles</h3>
+
+                        <div class="timeline-card">
+                            <div class="card-meta">
+                                <span class="date-badge">2022 – 2025</span>
+                                <span class="location-badge">Kad Distribution · Cotonou</span>
+                            </div>
+                            <h4 class="card-role">Développeur Full-Stack (PHP · MySQL · JS)</h4>
+                            <p class="card-text">
+                                Conception intégrale, livraison et maintenance de la plateforme e-commerce officielle. Modélisation relationnelle de la base de données, création de modules sur-mesure et optimisation Core Web Vitals (-40% sur les temps de chargement, 99.9% de disponibilité).
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="card-meta">
+                                <span class="date-badge">2023 – 2024</span>
+                                <span class="location-badge">Koobify (Express Monde Inc.) · Montréal (Remote)</span>
+                            </div>
+                            <h4 class="card-role">Développeur Web (Vue.js · Firebase) — Freelance</h4>
+                            <p class="card-text">
+                                Développement d'interfaces dynamiques et de composants réactifs en Vue.js. Synchronisation de données en temps réel via Firebase (Firestore), intégration des APIs de suivi logistique et fiabilisation des parcours d'achat.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="card-meta">
+                                <span class="date-badge">2021 – 2022</span>
+                                <span class="location-badge">Plénitude Expertise SA · Cotonou</span>
+                            </div>
+                            <h4 class="card-role">Développeur Web Front-End &amp; PHP</h4>
+                            <p class="card-text">
+                                Intégration d'interfaces web dynamiques conformes aux spécifications fonctionnelles (JavaScript, HTML5/CSS3). Évolution de modules PHP, recette fonctionnelle cross-browser et mises en production avec 0 incident critique.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-column">
+                        <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Formations &amp; Diplômes</h3>
+
+                        <div class="timeline-card edu-card">
+                            <div class="card-meta">
+                                <span class="date-badge highlight-date">2026 – 2028</span>
+                                <span class="location-badge">INSTA Paris · Niveau 7 (Bac+5)</span>
+                            </div>
+                            <h4 class="card-role">Master — Directeur de Projet en Conception et Développement de Solutions Informatiques</h4>
+                            <p class="card-text">
+                                Certification RNCP 38503. Spécialisation en architectures logicielles, gouvernance des SI, méthodologies agiles et pilotage technique de projets d'envergure.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card edu-card">
+                            <div class="card-meta">
+                                <span class="date-badge">2020 – 2023</span>
+                                <span class="location-badge">ESTG Vedoko · Bac+3</span>
+                            </div>
+                            <h4 class="card-role">Licence Professionnelle Informatique (Systèmes d'Info et Logiciels)</h4>
+                            <p class="card-text">
+                                Algorithmique avancée, conception de bases de données relationnelles (Merise/UML, SQL), développement web et génie logiciel.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card edu-card">
+                            <div class="card-meta">
+                                <span class="date-badge">2019 – 2022</span>
+                                <span class="location-badge">Université d'Abomey-Calavi · Bac+3</span>
+                            </div>
+                            <h4 class="card-role">Licence en Anglais — Linguistique</h4>
+                            <p class="card-text">
+                                Maîtrise courante de la langue anglaise, rédaction technique et communication internationale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Me Contacter</span>
+                    <h2 class="section-title">Discutons de votre Alternance</h2>
+                    <p class="section-subtitle">Disponible immédiatement pour un échange téléphonique, visio ou en présentiel en Île-de-France.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Coordonnées Directes</h3>
+                        <p>
+                            Vous avez une opportunité en alternance ou un projet à me confier ? N'hésitez pas à me contacter directement :
+                        </p>
+
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="item-label">Email professionnel</span>
+                                    <a href="mailto:escrivetogbe@gmail.com" class="item-value">escrivetogbe@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" id="copyEmailBtn" title="Copier l'email" aria-label="Copier l'email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="item-label">Téléphone</span>
+                                    <a href="tel:+33759334511" class="item-value">+33 7 59 33 45 11</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span class="item-label">GitHub</span>
+                                    <a href="https://github.com/escrivetogbe" target="_blank" rel="noopener noreferrer" class="item-value">github.com/escrivetogbe</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="item-label">Localisation</span>
+                                    <span class="item-value">Villeneuve-le-Roi, Île-de-France (Mobilité Paris &amp; IDF)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hiring-box">
+                            <div class="hiring-header">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Rythme d'alternance INSTA Paris</span>
+                            </div>
+                            <p><strong>3 semaines en entreprise / 1 semaine à l'école</strong>. Prêt à démarrer immédiatement sous contrat d'apprentissage ou de professionnalisation.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <h3>M'envoyer un message rapide</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="senderName">Votre nom &amp; entreprise</label>
+                                <input type="text" id="senderName" placeholder="Ex: Marie Dupont — Agence Tech" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderEmail">Votre adresse e-mail</label>
+                                <input type="email" id="senderEmail" placeholder="nom@entreprise.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageSubject">Objet du message</label>
+                                <input type="text" id="messageSubject" placeholder="Opportunité d'alternance Développeur Full-Stack" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageBody">Message</label>
+                                <textarea id="messageBody" rows="4" placeholder="Bonjour Elie, votre profil nous intéresse..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-btn primary-btn full-btn">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span>Envoyer via ma messagerie</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">&lt;EM/&gt; Elie Mahutin TOGBE</span>
+                <p>Développeur Web Full-Stack · Master INSTA Paris</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/escrivetogbe" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:escrivetogbe@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+33759334511" title="Téléphone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Elie Mahutin TOGBE. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Element -->
+    <div class="toast" id="toast">Email copié dans le presse-papiers !</div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
