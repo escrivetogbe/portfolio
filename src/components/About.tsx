@@ -53,7 +53,7 @@ export default function About() {
               <li className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-slate-900 dark:text-white font-semibold">Expérience Internationale :</strong> Travail en télétravail pour des entreprises au Canada (Koobify Montréal) et au Bénin, avec une grande adaptabilité culturelle et technique.
+                  <strong className="text-slate-900 dark:text-white font-semibold">Collaboration &amp; Projets à Distance :</strong> Expérience de livraison pour des entreprises e-commerce et logistiques (notamment Koobify à Montréal, Canada), avec une grande adaptabilité technique.
                 </div>
               </li>
               <li className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400">

@@ -2,8 +2,8 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    period: "2022 – 2025",
-    location: "Kad Distribution · Cotonou",
+    period: "2024 – 2026",
+    location: "Kad Distribution (Liqui Moly)",
     role: "Développeur Full-Stack (PHP · MySQL · JS)",
     description:
       "Conception intégrale, livraison et maintenance de la plateforme e-commerce officielle. Modélisation relationnelle de la base de données, création de modules sur-mesure et optimisation Core Web Vitals (-40% sur les temps de chargement, 99.9% de disponibilité).",
@@ -17,8 +17,8 @@ const experiences = [
   },
   {
     period: "2021 – 2022",
-    location: "Plénitude Expertise SA · Cotonou",
-    role: "Développeur Web Front-End & PHP",
+    location: "Plénitude Expertise SARL",
+    role: "Développeur Web Front-End & PHP — Stage",
     description:
       "Intégration d'interfaces web dynamiques conformes aux spécifications fonctionnelles (JavaScript, HTML5/CSS3). Évolution de modules PHP, recette fonctionnelle cross-browser et mises en production avec 0 incident critique.",
   },
