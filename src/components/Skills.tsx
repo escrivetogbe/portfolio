@@ -1,4 +1,4 @@
-import { Layout, Server, Database, Wrench } from "lucide-react";
+import { Layout, Server, Database, BarChart3, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
@@ -6,6 +6,7 @@ const skillCategories = [
     subtitle: "Interfaces réactives & performantes",
     icon: Layout,
     color: "text-indigo-500 bg-indigo-50 dark:bg-indigo-950/60",
+    fullWidth: false,
     skills: [
       { name: "React.js", highlight: true },
       { name: "Next.js", highlight: true },
@@ -22,12 +23,13 @@ const skillCategories = [
     subtitle: "APIs robustes, Logique métier & MVC",
     icon: Server,
     color: "text-rose-500 bg-rose-50 dark:bg-rose-950/60",
+    fullWidth: false,
     skills: [
       { name: "Node.js", highlight: true },
       { name: "Express", highlight: true },
       { name: "PHP", highlight: true },
       { name: "Laravel", highlight: true },
-      { name: "Python", highlight: false },
+      { name: "Python", highlight: true },
       { name: "Architecture MVC", highlight: false },
       { name: "APIs RESTful", highlight: false },
       { name: "Webhooks", highlight: false },
@@ -39,6 +41,7 @@ const skillCategories = [
     subtitle: "Stockage relationnel, NoSQL & Temps réel",
     icon: Database,
     color: "text-cyan-500 bg-cyan-50 dark:bg-cyan-950/60",
+    fullWidth: false,
     skills: [
       { name: "PostgreSQL", highlight: true },
       { name: "Prisma ORM", highlight: true },
@@ -46,23 +49,43 @@ const skillCategories = [
       { name: "Firebase (Firestore)", highlight: true },
       { name: "Firebase Auth", highlight: false },
       { name: "Vercel", highlight: false },
-      { name: "Modélisation relationnelle", highlight: false },
-      { name: "Requêtes optimisées", highlight: false },
+      { name: "Modélisation relationnelle (Merise / UML)", highlight: false },
+      { name: "Requêtes SQL optimisées", highlight: false },
     ],
   },
   {
-    title: "Outils & Environnement",
-    subtitle: "Versioning, Intégration & Méthodes",
+    title: "Data, Business Intelligence & Pilotage SI",
+    subtitle: "Analyse décisionnelle, Tableaux de bord, KPI & Gestion de projet",
+    icon: BarChart3,
+    color: "text-amber-500 bg-amber-50 dark:bg-amber-950/60",
+    fullWidth: false,
+    skills: [
+      { name: "Power BI", highlight: true },
+      { name: "Looker Studio", highlight: true },
+      { name: "SQL Analytique", highlight: true },
+      { name: "Analyse de données & KPI", highlight: true },
+      { name: "Excel Avancé (TCD / Reporting)", highlight: true },
+      { name: "Python (Data / Pandas)", highlight: false },
+      { name: "Data Visualisation", highlight: false },
+      { name: "Pilotage de Projet SI (MOA / AMOA)", highlight: false },
+    ],
+  },
+  {
+    title: "Outils, Qualité & Méthodologies",
+    subtitle: "Versioning, Intégration continue, Recette QA & Agilité",
     icon: Wrench,
     color: "text-emerald-500 bg-emerald-50 dark:bg-emerald-950/60",
+    fullWidth: true,
     skills: [
       { name: "Git / GitHub / GitLab", highlight: true },
       { name: "VS Code", highlight: true },
       { name: "Postman", highlight: true },
+      { name: "Méthodes Agiles / Scrum", highlight: true },
+      { name: "Tests Fonctionnels & Recette QA", highlight: false },
+      { name: "Jira / Confluence / Notion", highlight: false },
       { name: "Docker (notions)", highlight: false },
       { name: "CI/CD (notions)", highlight: false },
       { name: "WordPress (Sur-mesure)", highlight: false },
-      { name: "Méthodes Agiles / Scrum", highlight: false },
     ],
   },
 ];
@@ -74,13 +97,13 @@ export default function Skills() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800/60 mb-3">
-            Stack Technique
+            Stack Technique &amp; BI
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
             Mes Compétences
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Les technologies et outils que j&apos;utilise au quotidien pour concevoir des applications scalables.
+            Ingénierie logicielle Full-Stack, modélisation de bases de données, Business Intelligence et pilotage de projets SI.
           </p>
         </div>
 
@@ -91,7 +114,9 @@ export default function Skills() {
             return (
               <div
                 key={i}
-                className="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:border-slate-300 dark:hover:border-slate-700 transition-all"
+                className={`p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:border-slate-300 dark:hover:border-slate-700 transition-all ${
+                  cat.fullWidth ? "md:col-span-2" : ""
+                }`}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${cat.color}`}>

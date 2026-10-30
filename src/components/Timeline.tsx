@@ -4,23 +4,23 @@ const experiences = [
   {
     period: "2024 – 2026",
     location: "Kad Distribution (Liqui Moly)",
-    role: "Développeur Full-Stack (PHP · MySQL · JS)",
+    role: "Développeur Full-Stack (PHP / Laravel · MySQL · JS)",
     description:
-      "Conception intégrale, livraison et maintenance de la plateforme e-commerce officielle. Modélisation relationnelle de la base de données, création de modules sur-mesure et optimisation Core Web Vitals (-40% sur les temps de chargement, 99.9% de disponibilité).",
+      "Conception, développement et évolution de la plateforme e-commerce officielle (PHP/Laravel, MySQL, JavaScript). Modélisation relationnelle de la base de données, automatisation des flux de gestion back-office, suivi des KPI et optimisation Core Web Vitals (-40% sur les temps de chargement, 99.9% de disponibilité).",
   },
   {
     period: "2023 – 2024",
     location: "Koobify (Express Monde Inc.) · Montréal (Remote)",
-    role: "Développeur Web (Vue.js · Firebase) — Freelance",
+    role: "Développeur Web (Vue.js · Next.js · TypeScript · Firebase) — Freelance",
     description:
-      "Développement d'interfaces dynamiques et de composants réactifs en Vue.js. Synchronisation de données en temps réel via Firebase (Firestore), intégration des APIs de suivi logistique et fiabilisation des parcours d'achat.",
+      "Développement de composants réactifs et d'interfaces dynamiques (Vue.js, Next.js, TypeScript) pour le suivi des livraisons et la gestion des commandes. Synchronisation de données en temps réel via Firebase (Firestore, Auth), intégration des APIs REST / webhooks logistiques et optimisation des performances.",
   },
   {
     period: "2021 – 2022",
     location: "Plénitude Expertise SARL",
     role: "Développeur Web Front-End & PHP — Stage",
     description:
-      "Intégration d'interfaces web dynamiques conformes aux spécifications fonctionnelles (JavaScript, HTML5/CSS3). Évolution de modules PHP, recette fonctionnelle cross-browser et mises en production avec 0 incident critique.",
+      "Intégration d'interfaces web responsives conformes aux maquettes fonctionnelles (JavaScript, HTML5, CSS3 / Bootstrap). Développement CMS (WordPress), évolution de modules PHP / SQL, recette fonctionnelle cross-browser et mises en production avec 0 incident critique.",
   },
 ];
 

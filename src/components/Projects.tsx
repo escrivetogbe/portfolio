@@ -89,7 +89,7 @@ export default function Projects() {
           <article className="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:border-slate-300 dark:hover:border-slate-700 transition-all flex flex-col justify-between">
             <div>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["PHP", "MySQL", "JavaScript", "E-Commerce", "Core Web Vitals"].map((tech, idx) => (
+                {["PHP / Laravel", "MySQL", "JavaScript", "E-Commerce", "Core Web Vitals"].map((tech, idx) => (
                   <span
                     key={idx}
                     className="font-mono text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
@@ -122,7 +122,7 @@ export default function Projects() {
           <article className="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 shadow-sm hover:border-slate-300 dark:hover:border-slate-700 transition-all flex flex-col justify-between">
             <div>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Vue.js", "Firebase", "Firestore", "APIs REST", "Logistique"].map((tech, idx) => (
+                {["Vue.js", "Next.js", "TypeScript", "Firebase", "APIs REST"].map((tech, idx) => (
                   <span
                     key={idx}
                     className="font-mono text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"

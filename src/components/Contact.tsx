@@ -127,7 +127,7 @@ export default function Contact() {
                         Localisation
                       </span>
                       <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">
-                        Villeneuve-le-Roi, Île-de-France (Mobilité IDF)
+                        Paris, France (Mobilité Île-de-France)
                       </span>
                     </div>
                   </div>

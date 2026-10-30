@@ -89,7 +89,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
             <div className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-indigo-500" />
-              <span>Villeneuve-le-Roi, Île-de-France</span>
+              <span>Paris, France</span>
             </div>
             <span>•</span>
             <div className="flex items-center gap-1.5">
